@@ -1,0 +1,38 @@
+.table-row-cell:odd{
+  -fx-background-color: #7c9096;
+
+}
+
+.table-row-cell:even{
+    -fx-background-color: #A7B5B9;
+
+}
+/*.table-view .column-header-background{*/
+    /*-fx-background-color: red;*/
+/*}*/
+
+/*.table-view .column-header-background{*/
+    /*-fx-background-color: linear-gradient(#131313 0%, #424141 100%);*/
+/*}*/
+
+/*.table-view .column-header-background .label{*/
+    /*-fx-background-color: red;*/
+    /*-fx-text-fill: white;*/
+/*}*/
+
+.table-view .column-header {
+    -fx-background-color: #092720;
+    -fx-border-color: white;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+
+
+

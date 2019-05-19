@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="738.0" prefWidth="1097.0" style="-fx-background-color: #001710;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.IssueBooksController">
+   <children>
+      <Pane layoutX="458.0" layoutY="-231.0" prefHeight="528.0" prefWidth="437.0" rotate="-35.2" style="-fx-background-color: #647d86; -fx-background-radius: 70;" />
+      <AnchorPane layoutX="2.0" layoutY="2.0" prefHeight="728.0" prefWidth="292.0" style="-fx-background-color: #001510;">
+         <children>
+            <Button fx:id="btnTitle" alignment="CENTER" layoutX="51.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="240.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="Borrows" textFill="#647d86">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <VBox layoutX="6.0" layoutY="147.0" prefHeight="284.0" prefWidth="285.0">
+               <children>
+                  <Button fx:id="btnHome" mnemonicParsing="false" onAction="#btnHome_OnAction" prefHeight="44.0" prefWidth="299.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="  Dashboard" textFill="#647d86" textOverrun="CLIP">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnAdd_OnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="  Add" textFill="#7c9096">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDel" mnemonicParsing="false" onAction="#btnDel_OnAction" prefHeight="44.0" prefWidth="294.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="  Delete" textFill="#647d86">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/stop.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSave_OnAction" prefHeight="44.0" prefWidth="297.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="  Issue" textFill="#647d86">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/add-to-cart.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDecline" mnemonicParsing="false" onAction="#btnDecline_OnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="Decline" textFill="#7c9096">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/shopping-cart-cancel-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogout_OnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="  Logout" textFill="#7c9096">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/logout%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="44.0" fitWidth="61.0" layoutX="71.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/knowledge.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="200.0" layoutX="4.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" rotate="86.2">
+               <image>
+
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="lstBooks" depth="2" layoutX="879.0" layoutY="288.0" opacity="0.83" prefHeight="145.0" prefWidth="200.0" showTooltip="true" style="-fx-background-color: #647D86; -fx-text-fill: #092720;" />
+      <Pane layoutX="326.0" layoutY="193.0" prefHeight="335.0" prefWidth="533.0" style="-fx-background-color: #092720; -fx-border-color: #647d86;">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="479.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="109.0" text="Borrow Id" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="txtBorrowId" prefHeight="30.0" prefWidth="332.0" style="-fx-text-fill: #A6A6A6;">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label prefHeight="35.0" prefWidth="88.0" text="Student Id" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXComboBox fx:id="cmbStuId" onAction="#cmbStuId_OnAction" prefHeight="31.0" prefWidth="264.0" style="-fx-text-fill: #A6A6A6;" />
+                  <Label prefHeight="35.0" prefWidth="111.0" text="Book Id" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXComboBox fx:id="cmbBookId" onAction="#cmbBookId_OnAction" prefHeight="31.0" prefWidth="279.0" style="-fx-text-fill: #A6A6A6;" />
+                  <Label prefHeight="35.0" prefWidth="151.0" text="Retuning Date" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="txtReturningDate" prefHeight="30.0" style="-fx-text-fill: #A6A6A6;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <VBox layoutX="281.0" layoutY="14.0" prefHeight="479.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Date" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="txtDate" prefHeight="30.0" style="-fx-text-fill: #A6A6A6;">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label prefHeight="35.0" prefWidth="128.0" text="Student's Name" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="txtstuName" prefHeight="30.0" style="-fx-text-fill: #A6A6A6;">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label prefHeight="35.0" prefWidth="151.0" text="Book Name" textFill="#647d86">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField fx:id="txtBookName" prefHeight="30.0" style="-fx-text-fill: #A6A6A6;">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXTextField>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <HBox layoutX="294.0" prefHeight="51.0" prefWidth="802.0" style="-fx-background-color: #092720;">
+         <children>
+            <JFXButton prefHeight="50.0" prefWidth="401.0" style="-fx-background-color: #09251E;" text="Borrows" textFill="#637d85">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="1.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnReturns" onAction="#btnReturns_OnAction" prefHeight="51.0" prefWidth="401.0" style="-fx-background-color: #193531;" text="Returns" textFill="#637d85">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="31.0" fitWidth="200.0" layoutX="878.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/add-to-cart.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

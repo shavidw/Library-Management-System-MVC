@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="740.0" prefWidth="1097.0" style="-fx-background-color: #001912;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.HomeController">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="734.0" prefWidth="307.0" style="-fx-background-color: #002F22;">
+         <children>
+            <Button fx:id="btnTitle" alignment="CENTER_RIGHT" layoutX="28.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="279.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0  0 40;" text="Dashboard" textFill="#647d86">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogout" layoutY="230.0" mnemonicParsing="false" onAction="#btnLogout_OnAction" prefHeight="54.0" prefWidth="307.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0 0 40;" text="Logout" textFill="#647d86">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="54.0" fitWidth="60.0" layoutX="45.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/speedometer.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnUser1" layoutX="-1.0" layoutY="175.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="308.0" style="-fx-background-color: #092720; -fx-background-radius: 40 0 0 40;" textFill="#647d86">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="54.0" fitWidth="47.0" layoutX="38.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/logout.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblTitle" alignment="CENTER" layoutX="15.0" layoutY="416.0" prefHeight="59.0" prefWidth="279.0" textFill="#37ebc3">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInfo" alignment="CENTER" layoutX="16.0" layoutY="469.0" prefHeight="64.0" prefWidth="279.0" textFill="#a6a6a6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="438.0" layoutY="-251.0" prefHeight="528.0" prefWidth="437.0" rotate="-35.2" style="-fx-background-color: #425359; -fx-background-radius: 70;" />
+      <JFXButton fx:id="btnManageStudents" layoutX="432.0" layoutY="84.0" onAction="#btnManageStudents_OnAction" onMouseEntered="#btnManageStudents_OnMouseEntered" onMouseExited="#btnManageStudents_OnMouseEnxited" prefHeight="244.0" prefWidth="233.0" style="-fx-background-radius: 50; -fx-background-color: #002F22;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imgStudent_OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/mortarboard.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnIssueBooks" layoutX="432.0" layoutY="386.0" onAction="#btnIssueBooks_OnAction" onMouseEntered="#btnIssueBooks_OnMouseEntered" onMouseExited="#btnIssueBooks_OnMouseExited" prefHeight="244.0" prefWidth="233.0" style="-fx-background-radius: 50; -fx-background-color: #002F22;">
+         <graphic>
+            <ImageView fitHeight="119.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/knowledge.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnSearchBooks" layoutX="728.0" layoutY="386.0" onAction="#btnSearchBooks_OnAction" onMouseEntered="#btnSearchBooks_OnMouseEntered" onMouseExited="#btnSearchBooks_OnMouseExited" prefHeight="244.0" prefWidth="233.0" style="-fx-background-radius: 50; -fx-background-color: #002F22;">
+         <graphic>
+            <ImageView fitHeight="112.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/research.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnManageBooks" layoutX="729.0" layoutY="84.0" onAction="#btnManageBooks_OnAction" onMouseEntered="#btnManageBooks_OnMouseEntered" onMouseExited="#btnManageBooks_OnMouseExited" prefHeight="244.0" prefWidth="233.0" style="-fx-background-radius: 50; -fx-background-color: #002F22;">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/books.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

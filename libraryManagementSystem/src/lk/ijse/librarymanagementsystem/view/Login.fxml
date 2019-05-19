@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="552.0" prefWidth="914.0" style="-fx-background-color: #00100C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.librarymanagementsystem.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="445.0" layoutY="7.0" prefHeight="536.0" prefWidth="459.0" style="-fx-background-color: #002432;" stylesheets="@css/login.css">
+         <children>
+            <AnchorPane layoutX="53.0" layoutY="39.0" prefHeight="458.0" prefWidth="360.0" style="-fx-background-color: #1B7561;">
+               <children>
+                  <Button layoutX="143.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnLogin_OnAction" style="-fx-background-color: #092720;" text="Login" textFill="#aea2a2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <JFXTextField fx:id="txtUsername" focusColor="#0fbaa5" labelFloat="true" layoutX="67.0" layoutY="144.0" prefHeight="31.0" prefWidth="210.0" promptText="Enter Username" unFocusColor="#4d5350" />
+                  <JFXPasswordField fx:id="pssPassword" focusColor="#0fbaa5" labelFloat="true" layoutX="67.0" layoutY="198.0" prefHeight="31.0" prefWidth="210.0" promptText="Enter Password" unFocusColor="#4d5350" />
+                  <Label layoutX="114.0" layoutY="29.0" prefHeight="66.0" prefWidth="115.0" text="Sign In" textFill="#f2ebeb">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblmessage" layoutX="67.0" layoutY="246.0" prefHeight="21.0" prefWidth="272.0" textFill="#37ebc3" />
+                  <Label fx:id="lblForgotPass" layoutX="113.0" layoutY="317.0" onMouseClicked="#lblForgotPass_OnMouseClicked" text="Forgot Password?" textFill="#5fd1c3" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      
+      <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="536.0" prefWidth="437.0" style="-fx-background-color: #001821;">
+         <children>
+            <Label layoutX="35.0" layoutY="93.0" text="Welcome " textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="159.0" text="Library Management System" textFill="#6b6666">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="195.0" text="University of Ruhuna" textFill="#6b6666">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="249.0" text="Don't have an account?" textFill="#0fbaa5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="132.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnSignUp_OnAction" style="-fx-background-color: #092720;" text="Sign Up" textFill="#aea2a2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
